@@ -1,0 +1,11 @@
+@import "./variables.css";
+@import "./nav.css";
+@import "./page.css";
+
+body{
+    background-color: #1d1b1b;
+    margin:0;
+    font-family: "Domine", serif;
+    font-size: 11px;
+    position: relative;
+}
