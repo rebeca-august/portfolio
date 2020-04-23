@@ -2,7 +2,6 @@ html{
     scroll-behavior: smooth;
 }
 
-
 .page{
     width: calc(100vw - var(--nav-width));
     height: 100vh;
@@ -11,7 +10,6 @@ html{
 }
 
 /* Home page */
-
 .main-red{
     color: var(--red-main)
 }
@@ -33,7 +31,8 @@ a{
     align-items: flex-start;
     background-color: #1d1b1b;
     font-size: 30px;
-    color: white;
+    color: whitesmoke;
+    letter-spacing: 2px;
 }
 
 .home .main-content-title{
@@ -49,24 +48,24 @@ a{
 
 .home .main-content button{
     border: 3px solid var(--red-main);
-    padding: 15px 20px;
+    padding: 10px 8px;
     font-size: 20px;
     color: var(--red-main);
     background-color: #1d1b1b;
-    transition: all 0.5s linear;
+    transition: all 1s linear;
     margin-top: 15px;
     margin-bottom: 30px;  
 }
 
 .home .main-content button:hover{
     background-color: var(--red-main);
-    border:3px solid white;
+    border:3px solid whitesmoke;
     border-radius: 20px;
     cursor: pointer;
 }
 
 .home .main-content button:hover span {
-    color: white;
+    color: whitesmoke;
 }
 
 .home .letter-R{
@@ -97,7 +96,8 @@ a{
     justify-content: center;
     background-color: #1d1b1b;
     font-size: 30px;
-    color: white;
+    color: whitesmoke;
+    letter-spacing: 2px;
 }
 
 .about .about-me-title{
@@ -127,9 +127,7 @@ a{
     filter: sepia(0.60);
 }
 
-
 /* My work page */
-
 .work .main-content{
     height: 100vh;
     position: relative;
@@ -140,12 +138,13 @@ a{
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
-    background-color: #1d1b1b;  
+    background-color: #1d1b1b; 
+    letter-spacing: 2px; 
 }
 
 .work .main-content-header{
     font-family: 'Montserrat';
-    color: white;
+    color: whitesmoke;
     font-size: 30px;
     padding-top: 10px;
     padding-left: 32%;
@@ -154,7 +153,7 @@ a{
 .thumbnails {
     width: 220px;
     height: 200px;
-    border: 3px solid white;
+    border: 3px solid whitesmoke;
     border-radius: 5px;
     cursor: pointer;
     box-sizing: border-box;
@@ -174,16 +173,14 @@ a{
     padding-left: 50px;
     padding-right: 200px;
     display: flex;
-    flex-grow: 1;
     background-color: #1d1b1b;
     font-size: 30px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    color: white;
+    color: whitesmoke;
     position: relative;
 }
-
 
 .contact .contact-title{
     font-family: 'Montserrat';
@@ -194,7 +191,7 @@ a{
 }
 .contact .contact-subtitle{
     font-family: 'Montserrat';
-    font-size: 15px;
+    font-size: 18px;
     display: inline-block;
     margin-left: 10px;
     margin-bottom: 30px;
@@ -216,21 +213,17 @@ a{
 }
 
 .contact-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-left: 7%;
     font-family: 'Montserrat';
     font-size: 18px;
 }
 
 .contact-email, .contact-number{
-    display: inline;
     padding: 10px;
 }
 
 .email, .phone-number{
     color: var(--red-main);
     padding-left: 5px;
+    letter-spacing: 2px;
 }
 
