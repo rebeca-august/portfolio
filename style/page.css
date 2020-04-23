@@ -10,18 +10,30 @@ html{
     margin-left: var(--nav-width);
 }
 
+/* Home page */
+
+.main-red{
+    color: var(--red-main)
+}
+
+a{
+    text-decoration: none;
+    color: var(--red-main);
+    cursor: pointer;
+}
+
 .home .main-content{
+    position: relative;
     height: 100vh;
     padding-left: 50px;
-    flex-grow: 1;
-    background-color: #1d1b1b;
-    font-size: 30px;
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    background-color: #1d1b1b;
+    font-size: 30px;
     color: white;
-    position: relative;
 }
 
 .home .main-content-title{
@@ -39,10 +51,11 @@ html{
     border: 3px solid var(--red-main);
     padding: 15px 20px;
     font-size: 20px;
+    color: var(--red-main);
     background-color: #1d1b1b;
-    transition: all .2s linear;
+    transition: all 0.5s linear;
     margin-top: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 30px;  
 }
 
 .home .main-content button:hover{
@@ -54,43 +67,6 @@ html{
 
 .home .main-content button:hover span {
     color: white;
-}
-
-.home .contact-me{
-    color: var(--red-main);
-}
-
-.home .tags{
-    font-family: 'Courier Prime', monospace;
-    color: var(--grey-main);
-    font-size: 15px;
-    margin-left: -10px;
-    display: flex;
-}
-
-.home .tags span{
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 10px;
-
-}
-
-.home .tags span:last-child{
-    margin-left: -10px;
-}
-
-.home .main-content-header > span{
-    font-family: 'Courier Prime', monospace;
-    color: var(--grey-main);
-    font-size: 15px;
-}
-
-.home .main-content-header span:last-child{
-    display: inline;
-}
-
-.home .rebeca{
-    color: var(--red-main)
 }
 
 .home .letter-R{
@@ -112,59 +88,26 @@ html{
 
 .about .main-content{
     height: 100vh;
+    position: relative;
     padding-left: 50px;
     padding-right: 200px;
-    flex-grow: 1;
-    background-color: #1d1b1b;
-    font-size: 30px;
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    background-color: #1d1b1b;
+    font-size: 30px;
     color: white;
-    position: relative;
 }
 
-.about .tags{
-    font-family: 'Courier Prime', monospace;
-    color: var(--grey-main);
-    font-size: 15px;
-    margin-left: -30px;
-    display: flex;
-}
-
-.about .tags span{
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-}
-
-.about .tags span:last-child{
-    margin-left: 10px;
-}
-
-.about .main-content-header > span{
-    font-family: 'Courier Prime', monospace;
-    color: var(--grey-main);
-    font-size: 15px;
-}
-
-.about .main-content-header span:last-child{
-    display: inline;
-}
-
-.about .rebeca{
-    color: var(--red-main)
-}
 .about .about-me-title{
     font-family: 'Montserrat';
     margin: 0;
 }
 .about .about-me-subtitle{
+    display: inline-block;
     font-family: 'Montserrat';
     font-size: 15px;
-    display: inline-block;
     margin-bottom: 20px;
     margin-right: 500px 
 }
@@ -184,90 +127,44 @@ html{
     filter: sepia(0.60);
 }
 
-/* Skills-page */
 
-.skills .main-content{
+/* My work page */
+
+.work .main-content{
     height: 100vh;
-    padding-left: 50px;
-    padding-right: 200px;
-    flex-grow: 1;
-    background-color: #1d1b1b;
-    font-size: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    color: white;
     position: relative;
-}
-
-.skills .tags{
-    font-family: 'Courier Prime', monospace;
-    color: var(--grey-main);
-    font-size: 15px;
-    margin-left: -30px;
+    padding-left: 20px;
+    padding-right: 150px;
     display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    background-color: #1d1b1b;  
 }
 
-.skills .tags span{
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-}
-
-.skills .tags span:last-child{
-    margin-left: 10px;
-}
-
-.skills .main-content-header > span{
-    font-family: 'Courier Prime', monospace;
-    color: var(--grey-main);
-    font-size: 15px;
-}
-
-.skills .main-content-header span:last-child{
-    display: inline;
-}
-
-.skills .rebeca{
-    color: var(--red-main)
-}
-.skills .skills-title{
+.work .main-content-header{
     font-family: 'Montserrat';
-    margin: 0;
-}
-.skills .skills-subtitle{
-    font-family: 'Montserrat';
-    font-size: 15px;
-    display: inline-block;
-    margin-bottom: 20px;
-    margin-right: 500px 
+    color: white;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-left: 32%;
 }
 
-a{
-    text-decoration: none;
-    color: var(--red-main);
+.thumbnails {
+    width: 220px;
+    height: 200px;
+    border: 3px solid white;
+    border-radius: 5px;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
-.sololearn{
-    text-decoration: underline;
-}
-
-.skills .skills-img{
-    position: absolute;
-    top: 120px;
-    right: 220px;
-    width: 300px;
-    height: 430px;
-    border-radius: 20px;
-    transition: all .2s ease-in;
-}
-
-.skills-img:hover{
-    transform: rotate(10deg);
-    filter: sepia(0.60);
+.etch-a-sketch{
+    font-size: 15px;
+    background: url(../img/etch-a-sketch.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /* Contact-page */
@@ -276,10 +173,10 @@ a{
     height: 100vh;
     padding-left: 50px;
     padding-right: 200px;
+    display: flex;
     flex-grow: 1;
     background-color: #1d1b1b;
     font-size: 30px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -287,55 +184,25 @@ a{
     position: relative;
 }
 
-.contact .tags{
-    font-family: 'Courier Prime', monospace;
-    color: var(--grey-main);
-    font-size: 15px;
-    margin-left: -30px;
-    display: flex;
-}
 
-.contact .tags span{
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-}
-
-.contact .tags span:last-child{
-    margin-left: 10px;
-}
-
-.contact .main-content-header > span{
-    font-family: 'Courier Prime', monospace;
-    color: var(--grey-main);
-    font-size: 15px;
-}
-
-.contact .main-content-header span:last-child{
-    display: inline;
-}
-
-.contact .rebeca{
-    color: var(--red-main)
-}
 .contact .contact-title{
     font-family: 'Montserrat';
     margin: 0;
     color: var(--red-main);
     padding-left: 10px;
+    padding-bottom: 7%;
 }
 .contact .contact-subtitle{
     font-family: 'Montserrat';
     font-size: 15px;
     display: inline-block;
     margin-left: 10px;
-    padding-right: 460px 
+    margin-bottom: 30px;
 }
 
 .contact-img{
     position: absolute;
-    top: 200px;
+    top: 160px;
     right: 170px;
     width: 330px;
     height: 330px;
@@ -348,86 +215,22 @@ a{
     filter: sepia(0.60);
 }
 
-.contact-form .name{
-    margin: 10px;
-    margin-right: 0;
-    width: 200px;
-    background: #2b2b2b;
-    height: 10px;
-    font-size: 13px;
-    color: #8d8d8d;
-    padding: 20px;
-    border: 1px solid white;
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 7%;
+    font-family: 'Montserrat';
+    font-size: 18px;
 }
 
-.contact-form .name:hover{
-    border: 1px solid var(--red-main);
+.contact-email, .contact-number{
+    display: inline;
+    padding: 10px;
 }
 
-.contact-form .email{
-    margin: 10px;
-    margin-left: 0;
-    width: 200px;
-    background: #2b2b2b;
-    height: 10px;
-    font-size: 13px;
-    color: #8d8d8d;
-    padding: 20px;
-    border: 1px solid white;
+.email, .phone-number{
+    color: var(--red-main);
+    padding-left: 5px;
 }
 
-.contact-form .email:hover{
-    border: 1px solid var(--red-main);
-}
-
-.contact-form .subject{
-    margin: 0px;
-    margin-left: 10px;
-    width: 450px;
-    background: #2b2b2b;
-    height: 10px;
-    font-size: 13px;
-    color: #8d8d8d;
-    padding: 20px;
-    border: 1px solid white;
-}
-
-.contact-form .subject:hover{
-    border: 1px solid var(--red-main);
-}
-
-.contact-form .message{
-    margin: 0px;
-    margin-left: 10px;
-    width: 450px;
-    background: #2b2b2b;
-    height: 10px;
-    font-size: 13px;
-    color: #8d8d8d;
-    padding: 20px;
-    border: 1px solid white;
-}
-
-.contact-form .message:hover{
-    border: 1px solid var(--red-main);
-}
-
-.contact-form .submit{
-    border: 1px solid white;
-    padding: 15px 15px;
-    font-size: 20px;
-    background-color: #1d1b1b;
-    transition: all .2s linear;
-    margin-top: 20px;
-    margin-left: 220px;
-    margin-bottom: 30px;
-    color: #BC3F3E;
-}
-
-.contact-form .submit:hover{
-    background-color: var(--red-main);
-    border:3px solid white;
-    border-radius: 20px;
-    cursor: pointer;
-    color: white;
-}
