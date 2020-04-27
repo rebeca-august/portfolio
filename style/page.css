@@ -11,6 +11,7 @@ html{
 }
 
 /* Home page */
+
 .main-red{
     color: var(--red-main)
 }
@@ -59,9 +60,7 @@ a{
 }
 
 .home .main-content button:hover{
-    /* background-color: var(--red-main); */
     border:3px solid var(--red-main);
-    /* border-radius: 20px; */
     cursor: pointer;
     transform: scale(1.1);
 }
@@ -146,6 +145,7 @@ a{
     color: whitesmoke;
     font-size: 23px;
     text-align: center;
+    letter-spacing: 2px;
     margin: 50px;
 
 }   
@@ -163,7 +163,36 @@ a{
     box-sizing: border-box;
     border: 1px solid whitesmoke;
     border-radius: 5px;
-    margin-bottom: 7px;
+    overflow: hidden;
+}
+.project-content {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    transform: translateY(200px);
+    transition: transform .2s ease-in;
+}
+
+.project-content p {
+    margin:0;
+    color: var(--grey-main)   
+}
+
+.project-content a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.project:hover .project-content{
+    text-align: center;
+    line-height: 1.5;
+    transform: translateY(0);
 }
 
 .etch-a-sketch {
@@ -172,11 +201,19 @@ a{
     border-radius: 5px;
 }
 
-.work .main-content a{
-    display: none;
-    font-size: 15px;
-    cursor: pointer;
+.drum-kit{
+    background: url(../img/drum-kit.png);
+    background-size: cover;
+    border-radius: 5px;
 }
+
+.rock-paper-scissors{
+    background: url(../img/rock-paper-scissors.png);
+    background-size: cover;
+    border-radius: 5px;
+}
+
+
 
 /* Contact-page */
 
