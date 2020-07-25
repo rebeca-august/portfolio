@@ -4,55 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>portfolio-for-mobile</title>
 
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Courier+Prime|Domine&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Domine|Montserrat&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./style/index.css">
-
-    <title>My Portofolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav>
-        <header>
-            <a href="#home" class="logo">R</a>
-        </header>
+    <nav class="nav-bar">
+        <a href="#home" class="logo">R</a>
 
-        <main class="nav-middle">
-            <ul>
-                <a href="#home">
-                    <li class="nav-item">
-                        <span>Home</span>
-                        <i class="fas fa-home"></i>
-                    </li>
-                </a>
+        <ul>
+            <a href="#home">
+                <li class="nav-item">
+                    <span>Home</span>
+                    <i class="fas fa-home home-icon"></i>
+                </li>
+            </a>
 
-                <a href="#about">
-                    <li class="nav-item">
-                        <span class="-about">About</span>
-                        <i class="far fa-user-circle"></i>
-                    </li>
-                </a>
+            <a href="#about">
+                <li class="nav-item">
+                    <span class="about">About</span>
+                    <i class="far fa-user-circle about-icon"></i>
+                </li>
+            </a>
 
-                <a href="#work">
-                    <li class="nav-item">
-                        <span>My work</span>
-                        <i class="fas fa-tools"></i>
-                    </li>
-                </a>
+            <a href="#work">
+                <li class="nav-item">
+                    <span>My work</span>
+                    <i class="fas fa-tools"></i>
+                </li>
+            </a>
 
-                <a href="#contact">
-                    <li class="nav-item">
-                        <span>Contact</span>
-                        <i class="fas fa-paper-plane"></i>
-                    </li>
-                </a>
-            </ul>
-        </main>
+            <a href="#contact">
+                <li class="nav-item">
+                    <span>Contact</span>
+                    <i class="fas fa-paper-plane"></i>
+                </li>
+            </a>
+        </ul>
 
         <footer>
             <ul>
@@ -72,8 +66,10 @@
             </ul>
         </footer>
     </nav>
-    <section id="home" class="page home">
-        <main class="main-content">
+
+    <main>
+        <section id="home" class="page home">
+            <a href="#home" class="logo-mobile">R</a>
 
             <div class="main-content-header">
                 <h1 class="main-content-title">Hello, <br />
@@ -81,46 +77,58 @@
                     web developer.
                 </h1>
                 <h2 class="main-content-subtitle">Front End Developer / Beginner / Freelancer</h2>
+                <a href="#contact" class="home-btn"><button>
+                        <span>CONTACT ME</span>
+                    </button></a>
             </div>
-            <a href="#contact" class="home-btn"><button>
-                    <span>CONTACT ME</span>
-                </button></a>
-
 
             <img class="letter-R" src="img/letter-R.jpeg">
-        </main>
-    </section>
+        </section>
 
-    <section id="about" class="page about">
-        <main class="main-content">
-            <div class="main-content-header">
-                <h1 class="about-me-title"> About me <span class="main-red">...</span></h1>
-                <h2 class="about-me-subtitle"> Hi there, nice to have you here! <br />
-                    </br> My name is <span class="main-red">Rebeca</span>
-                    and I am passionate about
-                    learning web-development. <br />
-                    I have a Bachelor degree in <span class="main-red">International Business and Management.</span>
-                    However, after working 1 year in the industry I've decided to expand my set of skills
-                    and I started studying <span class="main-red">web-development</span> in
-                    my spare time.
-                    <br />
-                    I started my adventure in <span class="main-red">Coding Land</span>
-                    6 months ago and I'm ready to explore every corner of it
-                    <span class="main-red">!!!</span> <br />
-                </h2>
-            </div>
-
+        <section id="about" class="page about">
             <img class="about-me-img" src="img/about-me.jpeg">
-        </main>
-    </section>
 
+            <div class="main-content-header">
+                <h1 class="about-me-title"> About</h1>
+                <div class="about-me-subtitle">
 
-    <section id="work" class="page work">
-        <h1 class="work-header"> Skills <span class="main-red">&</span> Experience</h1>
+                    <p>
+                        I've graduated from <a href="https://www.cphbusiness.dk/english" target=".blank">CphBusiness</a>
+                        with a Bachelor
+                        degree in <span class="main-red">Innovation and Entrepreneurship</span>.
+                    </p>
 
-        <main class="work main-content">
+                    <p>
+                        After working 1 year in Market Research, I've decided to expand my set
+                        of skills
+                        and I fell in love with <span class="main-red">programming</span>.
+                    </p>
 
-            <div class="first-row">
+                    <p>
+                        While studying in my spare time, I've realized soon enough that I really enjoy learning about
+                        <span class="main-red">web-development</span>.
+                    </p>
+
+                    <p>
+                        Now, my career goal is to offer innovation and quality within <span
+                            class="main-red">web-development</span> sector.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="page work">
+            <h1 class="work-header"> Skills <span class="main-red">&</span> Experience</h1>
+            <div class="main-content">
+                <div class="project calculator">
+                    <div class="project-content">
+                        <p>Bad at math? No worries! This retro-looking calculator has your back.</p>
+                        <a href="https://rebeca-august.github.io/calculator/" target="_blank">
+                            See project
+                        </a>
+                    </div>
+                </div>
+
                 <div class="project drum-kit">
                     <div class="project-content">
                         <p>Get the party started with this easy-to-use Drum-kit.</p>
@@ -139,70 +147,65 @@
                     </div>
                 </div>
 
+                <div class="project to-do">
+                    <div class="project-content">
+                        <p> Check out this beautified to-do. No more excuses to ignore tasks!
+                        </p>
+                        <a href="https://rebeca-august.github.io/to-do-list/" target="_blank">
+                            See project
+                        </a>
+                    </div>
+                </div>
+
                 <div class="project rock-paper-scissors">
                     <div class="project-content">
-                        <p> Let's play rock-paper-scissors and bring back the childhood memories. </p>
+                        <p>Bring back childhood memories with the g[old] rock-paper-scissors game. </p>
                         <a href="https://rebeca-august.github.io/rock-paper-scissors-game/" target="_blank">
                             See project
                         </a>
                     </div>
                 </div>
-            </div>
 
-            <div class="second-row">
-                <div class="project">
+                <div class="project pomodoro-clock">
                     <div class="project-content">
-                        <a href="">
+                        <p>This pomodelicious clock helps you to structure your day in small but productive
+                            sessions.</p>
+                        <a href="https://rebeca-august.github.io/pomodoro-clock/" target="_blank">
                             See project
                         </a>
                     </div>
                 </div>
-
-                <div class="project">
-                    <div class="project-content">
-                        <a href="">
-                            See project
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <div class="project-content">
-                        <a href="">
-                            See project
-                        </a>
-                    </div>
-                </div>
-
-        </main>
+    </main>
     </section>
 
-
     <section id="contact" class="page contact">
-        <main class="main-content">
+        <div class="main-content">
+            <h1 class="contact-title"> Let's get in touch!</h1>
+            <h3 class="contact-subtitle">I would love to partake in your amazing projects.</h3>
 
-            <div class="main-content-header">
-                <h1 class="contact-title"> Let's get in touch!</h1>
-                <h2 class="contact-subtitle">I am interested in new opportunities so <br />
-                    please don't hesitate to reach out.
-                </h2>
-                <br /></h2>
+            <div class="contact-item">
+                <i class="fas fa-paper-plane fa-fw"></i>
+                <a class="email" href="mailto:rebeca.cazacu@gmail.com">rebeca.cazacu@gmail.com</a>
             </div>
 
-            <div class="contact-info">
-                <div class="contact-email">
-                    <i class="fas fa-paper-plane fa-fw"></i>
-                    <span class="email">rebeca.cazacu@gmail.com</span>
-                </div>
-
-                <div class="contact-number">
-                    <i class="fas fa-mobile-alt fa-fw"></i>
-                    <span class="phone-number">0791708619</span>
-                </div>
+            <div class="contact-item">
+                <i class="fas fa-mobile-alt fa-fw"></i>
+                <a class="phone-number" href="tel:+440791708619">0791708619</a>
             </div>
+        </div>
 
-            <img class="contact-img" src=img/contact-me.jpeg>
-        </main>
+        <div class="contact-social-media">
+            <a href="https://www.linkedin.com/in/alina-rebeca-cazacu/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://github.com/rebeca-august" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+
+        <img src="./img/skills.png" class="contact-image" alt="skills-building">
+
     </section>
 
     <script src="script.js"></script>
