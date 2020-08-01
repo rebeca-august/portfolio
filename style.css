@@ -481,6 +481,7 @@ a{
     }
 
     .contact-subtitle{
+        display: inline-block;
         font-style: oblique;
         color: whitesmoke;
         font-size: 18px;
