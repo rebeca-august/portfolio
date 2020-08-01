@@ -229,22 +229,22 @@ a{
 }
 
 .drum-kit{
-    background: url(../img/drum-kit.png);
+    background: url(./img/drum-kit.png);
     background-size: cover;
 }
 
 .etch-a-sketch {
-    background: url(../img/etch-a-sketch.png);
+    background: url(./img/etch-a-sketch.png);
     background-size: cover;
 }
 
 .to-do{
-    background-image: url(../img/to-do.png);
+    background-image: url(./img/to-do.png);
     background-size: cover;
 }
 
 .rock-paper-scissors{
-    background: url(../img/rock-paper-scissors.png);
+    background: url(./img/rock-paper-scissors.png);
     background-size: cover;
 }
 
