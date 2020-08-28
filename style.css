@@ -202,7 +202,6 @@ a{
     height: 180px;
     margin-bottom: 20px;
     box-sizing: border-box;
-    border: 2px solid whitesmoke;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -453,7 +452,6 @@ a{
         width: 350px;
         height: 200px;
         box-sizing: border-box;
-        border: 1px solid whitesmoke;
         border-radius: 5px;
         overflow: hidden;
     }
