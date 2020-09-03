@@ -62,7 +62,6 @@ a{
 }
 
 .nav-bar a{
-    color: var(--red-main);
     text-decoration: none;
 }
 
@@ -85,11 +84,6 @@ a{
 
 .nav-bar span{
     display: none;
-}
-
- .nav-item:hover{
-    color: var(--red-main);
-    text-decoration: none;
 }
 
 .nav-bar footer{
