@@ -420,37 +420,26 @@ a {
     flex: 0 1 auto;
     border-radius: 20px;
     width: min(300px, 30%);
-    transition: all 0.2s ease-in;
     margin: 0 5%;
-    animation: bounce 3.5s ease;
+    animation: slide-in 2s ease;
   }
 
-  @keyframes bounce {
+  @keyframes slide-in {
     0% {
       transform: translateY(-800px);
     }
-    10% {
-      transform: translateY(-700);
+    40% {
+      transform: translateY(-400);
     }
-    30% {
-      transform: translateY(-600px);
-    }
-    50% {
-      transform: translateY(0);
-    }
-    57% {
-      transform: scale(1.1, 0.9) translateY(-300px);
-    }
-    64% {
-      transform: scale(0.9, 1.1) translateY(-100);
+    60% {
+      transform: translateY(-100);
     }
     100% {
-      transform: scale(1, 1) translateY(0);
+      transform: translateY(0);
     }
   }
 
   .letter-R:hover {
-    transform: rotate(10deg);
     filter: sepia(0.6);
   }
 
@@ -479,7 +468,6 @@ a {
     top: -12%;
     border: 2px solid var(--red-main);
     z-index: -1;
-    border-radius: 5px;
   }
 
   .about .about-me-img {
@@ -487,12 +475,18 @@ a {
     width: min(200px, 30%);
     margin: 0 10% 0 0;
     border-radius: 20px;
-    transition: all 0.2s ease-in;
+    transform: translateX(-100%);
+    transition: opacity 1s ease-in, transform 1s ease-in;
+    opacity: 0;
   }
 
   .about-me-img:hover {
-    transform: rotate(-10deg);
     filter: sepia(0.6);
+  }
+
+  .about .about-me-img.appear {
+    transform: translateX(0);
+    opacity: 1;
   }
 
   /* Projects */
@@ -520,6 +514,15 @@ a {
     box-sizing: border-box;
     border-radius: 5px;
     overflow: hidden;
+  }
+
+  .fade-in {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+  }
+
+  .fade-in.appear {
+    opacity: 1;
   }
 
   /* Contact page */
