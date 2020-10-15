@@ -1,9 +1,7 @@
-const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
-
-tl.to(".text", { y: "0%", duration: 1, stagger: 0.5 });
+//using GSAP to animate the home page
+gsap.to(".text", { y: "0%", duration: 1, stagger: 0.5, ease: "power1.out" });
 
 // Intersection observer for nav-bar
-
 const pages = document.querySelectorAll(".page");
 const navItems = document.querySelectorAll(".nav-bar ul a");
 
