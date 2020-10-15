@@ -1,3 +1,7 @@
+const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+
+tl.to(".text", { y: "0%", duration: 1, stagger: 0.5 });
+
 // Intersection observer for nav-bar
 
 const pages = document.querySelectorAll(".page");

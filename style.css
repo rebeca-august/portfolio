@@ -145,7 +145,7 @@ a {
 .home-btn button:hover {
   border: 3px solid var(--red-main);
   cursor: pointer;
-  transform: scale(0.95);
+  transform: scale(0.98);
 }
 
 .home-btn button:hover span {
@@ -408,10 +408,28 @@ a {
     font-size: 16px;
   }
 
-  .home-btn button {
-    font-size: 20px;
+  .hide {
+    background-color: #1d1b1b;
+    margin: 0;
+    overflow: hidden;
   }
 
+  .hide span {
+    transform: translateY(100%);
+    display: inline-block;
+  }
+
+  .home-btn button {
+    font-size: 20px;
+    animation: show-up 0s 2s forwards;
+    visibility: hidden;
+  }
+
+  @keyframes show-up {
+    to {
+      visibility: visible;
+    }
+  }
   .letter-R {
     flex: 0 1 auto;
     border-radius: 20px;
@@ -422,16 +440,16 @@ a {
 
   @keyframes slide-in {
     0% {
-      transform: translateY(-800px);
+      transform: translateX(-800px);
     }
     40% {
-      transform: translateY(-400);
+      transform: translateX(-400);
     }
     60% {
-      transform: translateY(-100);
+      transform: translateX(-100);
     }
     100% {
-      transform: translateY(0);
+      transform: translateX(0);
     }
   }
 
