@@ -159,15 +159,18 @@ a {
   position: absolute;
   top: 0;
   right: 0;
-  border: 3px dotted whitesmoke;
+  display: inline-block;
+  width: 96px;
+  height: 25px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
   margin: 10px 10px 0 0;
-}
-
-.resume > a {
+  border: 3px dotted whitesmoke;
   text-decoration: none;
 }
 
-.resume:hover a {
+.resume:hover {
   color: whitesmoke;
 }
 
