@@ -6,6 +6,7 @@
   --mobile-padding: 30px;
   --tablet-padding: 40px;
   --desktop-padding: 10%;
+  --large-desktop-padding: 20%;
 }
 
 html {
@@ -640,5 +641,15 @@ a {
   .contact-item {
     margin-bottom: 20px;
     color: var(--red-main);
+  }
+}
+
+@media screen and (min-width: 1614px) {
+  .page {
+    padding: 50px var(--large-desktop-padding);
+  }
+
+  .about-me-img {
+    margin: 0 20% 0 -25px;
   }
 }
