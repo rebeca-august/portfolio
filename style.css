@@ -649,6 +649,10 @@ a {
     padding: 50px var(--large-desktop-padding);
   }
 
+  .work.page {
+    padding: 50px 15%;
+  }
+
   .about-me-img {
     margin: 0 20% 0 -25px;
   }
