@@ -649,11 +649,11 @@ a {
     padding: 50px var(--large-desktop-padding);
   }
 
-  .about.work.page {
+  #work.page.work {
     padding: 50px 15%;
   }
 
-  .about-me-img {
+  #about .about-me-img {
     margin: 0 20% 0 -25px;
   }
 }
